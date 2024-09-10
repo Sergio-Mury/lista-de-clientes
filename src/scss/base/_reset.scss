@@ -1,0 +1,52 @@
+// *{ 
+//     box-sizing: border-box;
+// }
+
+// html, body{
+//     height: 100%;
+// }
+
+// body{
+//     margin: 0;
+//     background: var(--black);
+//     font-family: Roboto,"helvetica neue";
+// }
+
+// h1{
+//     font-size: 22px;
+// }
+
+// h2 , h3{
+//     font-size: 14px;
+// }
+
+// h1,h2,h3,a{
+//     color: var(--white);
+//     text-decoration: none;
+// }
+
+// p{
+//     color: var(--grey);
+//     font-size: 16px;
+//     margin: 10px 0;
+// }
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto,"helvetica neue";
+    
+}
+
+body {
+    background: var(--black);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+

@@ -1,0 +1,39 @@
+<div class="container-form">
+  <section class="header">
+    <h2>Novo Cliente</h2>
+  </section>
+<form [formGroup]="clientForm" (ngSubmit)="onSubmit()">
+
+    <div class="form-group">
+        <label for="nome">Nome:</label>
+        <input type="text" class="form-control" id="nome" formControlName="nome">
+        <div *ngIf="clientForm.get('nome')?.hasError('required')">
+        Nome é obrigatorio
+        </div>
+    </div>
+    
+    <div class="form-group">
+        <label for="email">E-mail:</label>
+        <input type="email" class="form-control" id="email" formControlName="email">
+        <div *ngIf="clientForm.get('email')?.hasError('required')">
+          E-mail é obrigatório
+        </div>
+        <div *ngIf="clientForm.get('email')?.hasError('email')">
+          E-mail inválido
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="telefone">Telefone:</label>
+        <input type="text" class="form-control" id="telefone" formControlName="telefone">
+        <div *ngIf="clientForm.get('telefone')?.hasError('pattern')">
+          Telefone deve conter apenas números
+        </div>
+      </div>
+    
+      <button type="submit" class="btn btn-primary" [disabled]="!clientForm.valid">
+        Adicionar Cliente
+      </button>
+
+</form>
+</div>

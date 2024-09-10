@@ -1,0 +1,29 @@
+.container-list{
+    width: 400px;
+    padding: 0 20px;
+    position: relative;
+    color: #fff;    
+}
+.table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td{
+    font-size: 14px;
+    padding: 10px;
+    border: solid 1px #ccc;
+}
+
+h1{
+    background: linear-gradient(120deg,#3acbf0 0%, #8bb0ff 100%);
+    padding: 24px;
+    text-align: center;
+    color: #fff;
+    border-top-left-radius: 20px ;
+    border-top-right-radius: 20px;
+}
+
+
+
+
